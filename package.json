@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
-    "test": "newman run ./tests/collection3.json -e ./tests/env1.json --reporters htmlextra,cli"
+    "test": "newman run ./tests/collection3.json -e ./tests/env1.json --reporters htmlextra,cli",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.6.0",
     "babel-preset-env": "^1.7.0",
+    "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.29.4",
     "nodemon": "^2.0.15"
   },
@@ -29,6 +30,7 @@
     "axios": "^0.26.1",
     "babel-node": "^0.0.1-security",
     "bcryptjs": "^2.4.3",
+    "build": "^0.1.4",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "joi": "^17.6.0",
